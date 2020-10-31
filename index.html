@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<link href="/home/kaymen679/the_odin_project/google-homepage/reset.css" rel="stylesheet" type="text/css" media="all">
+<style>
+    :index {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #container {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 10rem auto 10rem auto;
+        padding-bottom: 80px;
+        min-height: 100%;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;   
+    }
+    header a {
+        color: black;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header a:hover {
+        text-decoration: underline;
+    }
+    .headlink-right {
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 .75rem 0 auto;
+    }
+    .headlink-left {
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 auto 0 .75rem;
+    }
+
+    a {
+        padding: 10%;
+    }
+    img {
+        padding: 1.5rem;
+        width: 75%;
+        height: auto;
+        max-width: 300px;
+    }
+    .buttons {
+        display: block;
+        margin: 1rem auto;
+    }
+    .button {
+        margin: .75rem 1rem;
+        border-radius: 3px;
+        border: 0px;
+        padding: .5rem 1.25rem;
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+    .button:hover {
+        box-shadow: 0 1px 6px rgba(32,33,36,.28);
+        border: 1px solid rgba(10, 10, 10, .1);
+    }
+    #search {
+        width: 75%;
+        padding: .7rem;
+        border-radius: 1.5rem;
+        border: 1px solid rgba(10, 10, 10, .3);
+        font-size: 1.25rem;
+        max-width: 500px;
+    }
+    #search:hover {
+        box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    }
+    input:focus {
+        outline: none;
+    }
+    footer {
+        display: flex;
+        margin-top: 60px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(10, 10, 10, .1);
+        border-top: 1px solid rgba(10, 10, 10, .3);
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    .ft {
+        display: block;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .ft a {
+        color: grey;
+        text-decoration: none;
+        padding: .5rem .5rem;
+        margin: 4rem auto;
+    }
+
+</style>
+<html>
+    <body id="wrapper">
+    <header>
+        <div class="headlink-left">
+            <a href="#" >About</a>
+            <a href="#" >Store</a>
+        </div>
+        <div class="headlink-right">
+            <a href="#" >Gmail</a>
+            <a href="#" >Images</a>
+        </div>
+    </header>
+    <div id="container">
+        <head>
+            <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+        </head>
+        <form>
+            <input type="text" name="search" id="search" placeholder="Google">
+            <div class="buttons">
+            <input type="submit" class="button" id="searchbutton" value="Google Search">
+            <button class="button" id="feelinglucky"> I'm Feeling Lucky </button>
+            </div>
+            </form>
+        </form>
+    </div>
+    <footer>
+        <div>
+            <span class="ft">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </span>
+            <span class="ft">
+                <a href="#">Advertising</a>
+                <a href="#">Buisness</a>
+                <a href="#">How Search Works</a>
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
